@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Rubik Beastly', cursive;
+}
+
+body{
+    background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4933161.jpg);
+    background-color: rgb(126, 126, 126);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.edge{
+    background-image: url(https://images.unsplash.com/photo-1611600700192-d87eaeed4f81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=627&q=80);
+    background-size: cover;
+}
+
+
+
+.edge{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    width: 800px;
+}
+
+.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8{
+    display: flex;
+}
+
+
+.B, .W{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.B{
+    background-color: rgba(19, 80, 70, 0.925);
+}
+
+.W{
+    background-color: rgba(252, 236, 208, 0.582);
+}
+
+#wpiece{
+    font-size: 50px;
+    color:rgb(255, 247, 230);
+    text-shadow: black 1px 1px 1px;
+    
+}
+
+#bpiece{
+font-size: 50px;
+text-shadow: rgb(255, 255, 255) 1px 1px 1px;
+
+
+}
+
+
+.l2>div:hover #wpiece{
+    transition: 0.5s;
+    position: relative;
+    bottom: 100px;
+    
+}
+
+
+.l7>div:hover #bpiece{
+    position: relative;
+    top:100px;
+   
+
+    
+}
+
+.latter{
+    display: none;
+    color: hotpink;
+    font-size: 50px;
+
+    
+}
+
+.l7>div:hover .latter, .l2>div:hover .latter{
+    display: inline-block;
+    position: relative;
+    right: 15px;
+}
+
+
+.l7>div:hover .LP, .l2>div:hover .LP{
+     position: relative;
+    left: 18px;
+    
+}
+
+
+.l7>div:hover .LPI, .l2>div:hover .LPI{
+    position: relative;
+   left: 10px;
+   
+}
+
+.l2>div:hover .LPW{
+    position: relative;
+    left: 20px;
+}
+
+
+.l2>div:hover .LPL{
+    position: relative;
+    left: 15px;
+}
+
+/* ///////////////////////// */
+
+
+
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 25px;
+   
+    cursor: pointer;
+}
+
+button:active~.Board, button:active~.Board  i{
+    transform: rotate(180deg);
+}
+
+
